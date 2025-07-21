@@ -1,42 +1,46 @@
-# Priyanshi-Bisht
-Calculator Project
-<<<<<<< SEARCH
-        body {
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+# Priyanshi-Bisht - Calculator Project
+ def add(x, y):
+    return x + y
+ def subtract(x, y):
+    return x - y
+ def multiply(x, y):
+    return x  y
+ def divide(x, y):
+    if y == 0:
+        return "Error! Division by zero."
+    return x / y
+ def calculator():
+    print("Select operation:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    while True:
+        choice = input("Enter choice (1/2/3/4): ")
+        if choice in ['1', '2', '3', '4']:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            if choice == '1':
+                print(f"{num1} + {num2} = {add(num1, num2)}")
+            elif choice == '2':
+                print(f"{num1} - {num2} = {subtract(num1, num2)}")
+            elif choice == '3':
+                print(f"{num1}  {num2} = {multiply(num1, num2)}")
+            elif choice == '4':
+                print(f"{num1} / {num2} = {divide(num1, num2)}")
+        else:
+            print("Invalid input")
+ 7/21/25, 3:18 PM BLACKBOXAI
+ https://www.blackbox.ai/chat/LZgTprb 1/10
+        next_calculation = input("Do you want to perform another calculation? 
+(yes/no): ")
+        if next_calculation.lower() != 'yes':
+            break
+ if __name__ == "__main__":
+    calculator()
+ How to Use the Code:
+ 1. Copy the code into a Python file (e.g., calculator.py).
+ 2. Run the file using Python (e.g., python calculator.py).
+ 3. Follow the prompts to perform calculations.
+ This calculator will continue to prompt for new calculations until the user decides to exit
 
-        .calculator {
-            width: 320px;
-            background-color: #0f3460;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            padding: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .calculator:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-        }
-=======
-        body {
-            background: #f0f0f0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .calculator {
-            width: 300px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
->>>>>>> REPLACE
