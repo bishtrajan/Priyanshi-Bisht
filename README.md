@@ -30,9 +30,8 @@
                 print(f"{num1} / {num2} = {divide(num1, num2)}")
         else:
             print("Invalid input")
- 7/21/25, 3:18 PM BLACKBOXAI
- https://www.blackbox.ai/chat/LZgTprb 1/10
-        next_calculation = input("Do you want to perform another calculation? 
+ 
+   next_calculation = input("Do you want to perform another calculation? 
 (yes/no): ")
         if next_calculation.lower() != 'yes':
             break
